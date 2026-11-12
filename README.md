@@ -70,3 +70,20 @@ Yıldız Şeması (*Star Schema*) mimarisinde `Fact_Asteroids` ve `Dim_Hazard` t
     cp .env.example .env
     quarto render sunum.qmd
     quarto render makale.qmd
+
+---
+
+## 📖 Veri Sözlüğü (Data Dictionary)
+
+`neo_asteroids_raw.csv` veri setinde yer alan temel değişkenlerin tanımları ve ölçü birimleri:
+
+| Değişken Adı | Kaynak Endpoint | Birim / Format | Açıklama |
+| :--- | :---: | :---: | :--- |
+| `Goktasi_ID` | Feed & Lookup | Metin (ID) | NASA JPL SPK-ID benzersiz göktaşı kimlik numarası |
+| `Mutlak_Parlaklik` | Feed API | Magnitüd ($H$) | Göktaşının mutlak optik parlaklığı (değer küçüldükçe boyut büyür) |
+| `Cap_Min_Km` / `Cap_Max_Km` | Feed API | Kilometre ($km$) | Tahmini minimum ve maksimum fiziksel çap sınırları |
+| `Hiz_Km_S` | Feed API | $km/s$ | Göktaşının Dünya'ya göre bağıl yaklaşma hızı |
+| `Iskalama_Mesafesi_Km` | Feed API | Kilometre ($km$) | En yakın geçiş anındaki minimum merkezler arası mesafe |
+| `Yorunge_Basikligi` | Lookup API | $0 - 1$ (Oran) | Eliptik yörüngenin dairesellikten sapma derecesi (*eccentricity*) |
+| `Egiklik_Derecesi` | Lookup API | Derece ($^\circ$) | Yörünge düzleminin Dünya'nın ekliptik düzlemine göre eğikliği (*inclination*) |
+| `Tehlikeli` | Feed API | İkili ($0 / 1$) | Hedef değişken: `1` = Potansiyel Tehlikeli (PHA), `0` = Güvenli |
