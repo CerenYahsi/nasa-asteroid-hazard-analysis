@@ -2,7 +2,6 @@
 title: "NASA NeoWs API ile Dünya'ya Yakın Göktaşlarının Tehlike Sınıflandırması ve Yörünge Riski Analitiği"
 subtitle: "Çoklu API Entegrasyonu, Astrofiziksel Özellik Mühendisliği ve Makine Öğrenmesi"
 author: "Ceren Yahşi"
-date: "2026-11-12"
 format:
   revealjs:
     theme: simple
