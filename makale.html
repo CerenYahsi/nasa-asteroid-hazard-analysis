@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="103 - Ceren Yahşi">
+<meta name="author" content="Ceren Yahşi">
 <meta name="dcterms.date" content="2026-11-12">
 <meta name="keywords" content="NASA NeoWs API, Yakın Dünya Göktaşları, Makine Öğrenmesi, Özellik Mühendisliği, Gezegen Savunması, Power BI">
 
@@ -124,23 +124,16 @@ window.Quarto = {
 </div>
 
 
-<div class="quarto-title-meta-author">
-  <div class="quarto-title-meta-heading">Author</div>
-  <div class="quarto-title-meta-heading">Affiliation</div>
-  
-    <div class="quarto-title-meta-contents">
-    <p class="author">103 - Ceren Yahşi </p>
-  </div>
-  <div class="quarto-title-meta-contents">
-        <p class="affiliation">
-            SoftITo Veri Analitiği 26 Programı
-          </p>
-      </div>
-  </div>
 
 <div class="quarto-title-meta">
 
-      
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Ceren Yahşi </p>
+          </div>
+  </div>
+    
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
@@ -191,7 +184,7 @@ window.Quarto = {
 <li><strong>Yörünge Risk Göstergesi (<code>Yorunge_Risk_Gostergesi</code>):</strong> Yörünge basıklığı (<span class="math inline">\(e\)</span>) ile ekliptik eğiklik açısının (<span class="math inline">\(i\)</span>) sinüs bileşeninin çarpımı olup, cismin Dünya yörünge düzlemini kesme potansiyelini özetler: <span class="math display">\[\text{Yorunge\_Risk\_Gostergesi} = e \times \sin(i)\]</span></li>
 <li><strong>Logaritmik Iskalama Mesafesi (<code>Log_Iskalama_Mesafesi</code>):</strong> On milyonlarca kilometrelik mesafelerdeki sağa çarpıklığı (skewness) dengelemek amacıyla <span class="math inline">\(\log_{10}\)</span> dönüşümü uygulanmıştır.</li>
 </ul>
-<div id="995bdf8c" class="cell" data-execution_count="2">
+<div id="cd70eea2" class="cell" data-execution_count="2">
 <div class="cell-output cell-output-display cell-output-markdown" data-execution_count="2">
 <table class="caption-top table table-sm table-striped small">
 <colgroup>
@@ -259,7 +252,7 @@ window.Quarto = {
 <section id="keşifsel-veri-analizi-eda" class="level1" data-number="4">
 <h1 data-number="4"><span class="header-section-number">4</span> Keşifsel Veri Analizi (EDA)</h1>
 <p>İncelenen 43 göktaşının <strong>37’si (%86.05) Güvenli</strong>, <strong>6’sı (%13.95) Potansiyel Tehlikeli</strong> sınıfındadır. Bu yüksek sınıf dengesizliği (<em>class imbalance</em>), model eğitiminde sınıf ağırlıklandırması yapılmasını ve değerlendirmede Doğruluk (<em>Accuracy</em>) yerine <strong>Duyarlılık (Recall)</strong> ile <strong>ROC-AUC</strong> metriklerinin esas alınmasını zorunlu kılmaktadır.</p>
-<div id="34d07f37" class="cell" data-execution_count="3">
+<div id="bfc9f7dd" class="cell" data-execution_count="3">
 <div class="cell-output cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -274,7 +267,7 @@ window.Quarto = {
 <li><strong>Fiziksel Eşik Ayrışması:</strong> Potansiyel tehlikeli cisimlerin tamamı <span class="math inline">\(H &lt; 22.0\)</span> sınırının altında ve yüksek ortalama çap bölgesinde konumlanmaktadır.</li>
 <li><strong>Korelasyon Yapısı:</strong> <code>Mutlak_Parlaklik</code> ile <code>Tehlikeli</code> hedef değişkeni arasında güçlü negatif korelasyon (<span class="math inline">\(r = -0.60\)</span>) bulunurken, <code>Cap_Ortalama_Km</code> ve <code>Boyut_Hiz_Etkilesimi</code> değişkenleri tehlike durumu ile pozitif yönde anlamlı ilişki göstermektedir.</li>
 </ol>
-<div id="cfe4426b" class="cell" data-execution_count="4">
+<div id="ef523499" class="cell" data-execution_count="4">
 <div class="cell-output cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -293,7 +286,7 @@ window.Quarto = {
 <li><strong>Random Forest Classifier:</strong> Değişken etkileşimlerini yakalayan 120 ağaçlı topluluk modeli <span class="citation" data-cites="breiman2001random">(<a href="#ref-breiman2001random" role="doc-biblioref">Breiman 2001</a>)</span>.</li>
 <li><strong>Gradient Boosting Classifier:</strong> Artık hataları sıralı optimize eden gradyan artırma modeli <span class="citation" data-cites="friedman2001greedy">(<a href="#ref-friedman2001greedy" role="doc-biblioref">Friedman 2001</a>)</span>.</li>
 </ul>
-<div id="68db320b" class="cell" data-execution_count="5">
+<div id="55e1f624" class="cell" data-execution_count="5">
 <div class="cell-output cell-output-display cell-output-markdown" data-execution_count="5">
 <table class="caption-top table table-sm table-striped small">
 <colgroup>
@@ -339,7 +332,7 @@ window.Quarto = {
 </div>
 </div>
 <p>Gezegen savunması problemlerinde en maliyetli hata türü <strong>II. Tip Hata (False Negative)</strong>, yani tehlikeli bir göktaşının güvenli olarak sınıflandırılmasıdır. Doğrusal taban model olan Logistic Regression test setinde %50 duyarlılıkta kalırken, <strong>Random Forest</strong> ve <strong>Gradient Boosting</strong> modelleri test kümesindeki tüm tehlikeli cisimleri eksiksiz yakalayarak <strong>%100 duyarlılık (Recall = 1.00)</strong> ve <strong>1.0000 ROC-AUC</strong> performansına ulaşmıştır.</p>
-<div id="1ead2d5a" class="cell" data-execution_count="6">
+<div id="e8b88dc5" class="cell" data-execution_count="6">
 <div class="cell-output cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
