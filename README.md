@@ -51,7 +51,7 @@ Yıldız Şeması (*Star Schema*) mimarisinde `Fact_Asteroids` ve `Dim_Hazard` t
 
 ## 📂 Depo (Repository) Yapısı
 
-* `2.ipynb` — Veri çekme, özellik mühendisliği, EDA ve ML modelleme defteri[cite: 1]
+* `nasa_asteroid_hazard_analysis.ipynb` — Veri çekme, özellik mühendisliği, EDA ve ML modelleme defteri[cite: 1]
 * `neo_asteroids_raw.csv` — Birleştirilmiş ham veri seti (43 gözlem, 13 öznitelik)[cite: 1]
 * `sunum.qmd` / `sunum.html` — Quarto Reveal.js yönetici sunumu (10 slayt)
 * `makale.qmd` / `makale.html` — Akademik araştırma makalesi
