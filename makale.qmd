@@ -61,7 +61,7 @@ Ham astronomik ölçümlerin doğrusal olmayan karar sınırlarını daha etkin 
 
 * **Ortalama Çap (`Cap_Ortalama_Km`):** Tahmini minimum ve maksimum çap sınırlarının aritmetik ortalamasıdır:
   $$\text{Cap\_Ortalama\_Km} = \frac{\text{Cap\_Min\_Km} + \text{Cap\_Max\_Km}}{2}$$
-* **Boyut-Hız Etkileşimi (`Boyut_Hiz_Etkilesimi`):** Olası bir çarpışma senaryosundaki kinetik momentum büyüklüğünü temsil eden etkileşim terimidir:
+* **Boyut-Hız Etkileşimi (`Boyut_Hiz_Etkilesimi`):** Olası bir çarpışma senaryosundaki göreli darbe ve enerji potansiyelini temsil eden fiziksel etkileşim terimidir:
   $$\text{Boyut\_Hiz\_Etkilesimi} = \text{Cap\_Ortalama\_Km} \times \text{Hiz\_Km\_S}$$
 * **Yörünge Risk Göstergesi (`Yorunge_Risk_Gostergesi`):** Yörünge basıklığı ($e$) ile ekliptik eğiklik açısının ($i$) sinüs bileşeninin çarpımı olup, cismin Dünya yörünge düzlemini kesme potansiyelini özetler:
   $$\text{Yorunge\_Risk\_Gostergesi} = e \times \sin(i)$$
