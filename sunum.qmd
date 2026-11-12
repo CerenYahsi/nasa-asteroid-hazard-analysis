@@ -1,7 +1,7 @@
 ---
 title: "NASA NeoWs API ile Dünya'ya Yakın Göktaşlarının Tehlike Sınıflandırması ve Yörünge Riski Analitiği"
 subtitle: "Çoklu API Entegrasyonu, Astrofiziksel Özellik Mühendisliği ve Makine Öğrenmesi"
-author: "103 - Ceren Yahşi"
+author: "Ceren Yahşi"
 date: "2026-11-12"
 format:
   revealjs:
@@ -12,7 +12,6 @@ format:
     slide-number: true
     transition: slide
     highlight-style: github
-    footer: "SoftITo Veri Analitiği 26 | 103 - Ceren Yahşi"
 jupyter: python3
 ---
 

@@ -2,8 +2,7 @@
 title: "NASA NeoWs API ile Dünya'ya Yakın Göktaşlarının Tehlike Sınıflandırması ve Yörünge Riski Analitiği"
 subtitle: "Çoklu REST API Entegrasyonu, Astrofiziksel Özellik Mühendisliği ve Denetimli Makine Öğrenmesi Yaklaşımı"
 author:
-  - name: "103 - Ceren Yahşi"
-    affiliation: "SoftITo Veri Analitiği 26 Programı"
+  - name: "Ceren Yahşi"
 date: "2026-11-12"
 abstract: |
   Gezegen savunması (planetary defense) kapsamında Dünya'ya Yakın Cisimlerin (Near-Earth Objects - NEO) erken tespiti ve tehlike sınıflandırması kritik önem taşımaktadır. Bu çalışmada, NASA'nın resmi Near-Earth Object Web Service (NeoWs) altyapısındaki iki bağımsız uç noktadan (Feed ve Lookup API) elde edilen gözlemsel geçiş parametreleri ile Güneş merkezli yörünge mekaniği verileri bütünleştirilerek 43 benzersiz göktaşına ait 13 öznitelikli analitik veri matrisi oluşturulmuştur. Ham astronomik değişkenlerden astrofizik temelli dört yeni öznitelik (Ortalama Çap, Boyut-Hız Etkileşimi, Yörünge Risk Göstergesi ve Logaritmik Iskalama Mesafesi) türetilmiştir. Sınıf dengesizliği (%86.05 Güvenli, %13.95 Potansiyel Tehlikeli) altında veri sızıntısını önleyen Scikit-Learn Pipeline mimarisi ile Logistic Regression, Random Forest ve Gradient Boosting sınıflandırıcıları karşılaştırılmıştır. Deneysel bulgular, ağaç tabanlı topluluk modellerinin (Random Forest ve Gradient Boosting) test kümesinde %100 duyarlılık (Recall = 1.00) ve 1.0000 ROC-AUC skoru elde ederek yanlış negatif (False Negative) hataları tamamen ortadan kaldırdığını göstermektedir.

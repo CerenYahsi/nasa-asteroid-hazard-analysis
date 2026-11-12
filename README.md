@@ -1,7 +1,6 @@
 # ☄️ NASA NeoWs API ile Dünya'ya Yakın Göktaşlarının Tehlike Sınıflandırması ve Yörünge Riski Analitiği
 
-- **Proje Kodu - Proje Sahibi:** 103 - Ceren Yahşi
-- **Program:** SoftITo Veri Analitiği 26
+- **Proje Kodu - Proje Sahibi:** Ceren Yahşi
 - **Tarih:** 12 Kasım 2026
 
 ---
